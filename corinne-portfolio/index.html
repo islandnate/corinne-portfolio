@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corinne Grayson | MSW Student and Violence Prevention Researcher</title>
+  <meta name="description" content="Portfolio of Corinne Grayson, Master of Social Work student at The University of Texas at Austin with a background in violence prevention research and health education.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal-deep: #12403F;
+      --teal: #1F5C5A;
+      --mint: #9FD6C8;
+      --paper: #F4F7F6;
+      --ink: #14262B;
+      --muted: #4C6165;
+      --rule: #C9D6D3;
+
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --sans: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { width: min(1040px, 100% - 3rem); margin-inline: auto; }
+
+    /* Hero */
+    .hero {
+      background: var(--teal-deep);
+      color: var(--paper);
+      padding: clamp(4rem, 12vw, 8rem) 0 clamp(3rem, 8vw, 5.5rem);
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(3.25rem, 11vw, 7.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin: 0 0 1.75rem;
+    }
+    .hero p {
+      font-size: clamp(1.125rem, 2.2vw, 1.375rem);
+      line-height: 1.5;
+      max-width: 34ch;
+      margin: 0 0 2.5rem;
+      color: #D7E6E2;
+    }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 0.875rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3rem;
+      padding: 0.75rem 1.5rem;
+      font: 600 1rem/1 var(--sans);
+      text-decoration: none;
+      border: 2px solid var(--paper);
+      border-radius: 999px;
+      color: var(--paper);
+      background: transparent;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+    .btn:hover { background: rgba(244, 247, 246, 0.14); }
+    .btn-primary { background: var(--paper); color: var(--teal-deep); }
+    .btn-primary:hover { background: var(--mint); border-color: var(--mint); }
+    .btn:focus-visible, a:focus-visible {
+      outline: 3px solid var(--mint);
+      outline-offset: 3px;
+    }
+
+    /* About */
+    .about { padding: clamp(3.5rem, 8vw, 6rem) 0; }
+    .about .wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .about h2 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin: 0;
+      color: var(--teal);
+    }
+    .about-text p { margin: 0 0 1.25rem; max-width: 62ch; }
+    .about-text p:last-child { margin-bottom: 0; }
+
+    .glance { margin: 0; border-top: 2px solid var(--teal); }
+    .glance div { padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+    .glance dt { font-weight: 600; color: var(--teal); font-size: 0.95rem; }
+    .glance dd { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.975rem; line-height: 1.5; }
+
+    @media (min-width: 860px) {
+      .about .wrap { grid-template-columns: 220px 1fr; gap: 4rem; }
+      .about-body { display: grid; gap: 3rem; }
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 1.75rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.925rem;
+    }
+    footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; }
+    footer a { color: var(--teal); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Corinne Grayson</h1>
+      <p>Master of Social Work student at UT Austin, focused on clinical work with adolescents, adults, and older adults.</p>
+      <nav class="actions" aria-label="Primary links">
+        <a class="btn btn-primary" href="Corinne_Grayson_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/corinne-grayson-8689b4202/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:ceg4393@my.utexas.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 id="about-title">About</h2>
+        <div class="about-body">
+          <div class="about-text">
+            <p>I'm a Master of Social Work student at The University of Texas at Austin, preparing for clinical practice with adolescents, adults, and older adults. In session, I draw on cognitive behavioral therapy, solution-focused brief therapy, and motivational interviewing.</p>
+            <p>My path to clinical work started in prevention. I studied global public health and social work at NYU, then spent several years in violence prevention research. I helped evaluate child sexual abuse prevention programs delivered to caregivers and schools across Pennsylvania, and I now support studies on child abuse prevention and youth with problematic sexual behaviors at the Center for Violence Prevention Research. Some of that work has been published in peer-reviewed journals.</p>
+            <p>I've also worked directly with young people: leading social and emotional learning groups at a youth center in London, teaching health workshops to high school students, and serving as a camp counselor. Research shows me what helps at the population level, and working with kids and teens reminds me that every person in the room has their own story. I want to bring both into my practice.</p>
+          </div>
+
+          <dl class="glance">
+            <div>
+              <dt>Education</dt>
+              <dd>M.S. in Social Work, The University of Texas at Austin (expected May 2027)<br>B.S. in Global Public Health and Social Work, New York University (2024)</dd>
+            </div>
+            <div>
+              <dt>Clinical approaches</dt>
+              <dd>Cognitive behavioral therapy, solution-focused brief therapy, motivational interviewing</dd>
+            </div>
+            <div>
+              <dt>Research areas</dt>
+              <dd>Child abuse prevention, child sexual abuse prevention, youth with problematic sexual behaviors, violence prevention</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 Corinne Grayson</span>
+      <a href="mailto:ceg4393@my.utexas.edu">ceg4393@my.utexas.edu</a>
+    </div>
+  </footer>
+
+</body>
+</html>
